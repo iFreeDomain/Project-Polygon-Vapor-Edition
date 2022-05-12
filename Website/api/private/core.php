@@ -7,7 +7,7 @@ require $_SERVER['DOCUMENT_ROOT'].'/api/private/vendors/Parsedown.php';
 
 try
 {
-	$pdo = new PDO('mysql:host='.SITE_CONFIG["sql6491278"]["sql6.freesqldatabase.com"].';dbname='.SITE_CONFIG["sql6491278"]["schema"], SITE_CONFIG["sql6491278"]["sql6491278"], SITE_CONFIG["sql6491278"]["6IebBW9dyx"]);
+	$pdo = new PDO('mysql:host='.SITE_CONFIG["sql6491278"]["sql6.freesqldatabase.com"].';dbname='SITE_CONFIG["sql6491278"]["sql6491278"], SITE_CONFIG["sql6491278"]["6IebBW9dyx"]);
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(PDOException $e)
